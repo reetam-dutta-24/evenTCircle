@@ -24,7 +24,7 @@ const workingList = [
 ]
 function working() {
   return (
-    <div className='p-6 flex flex-col gap-14 items-center  w-full h-full '>
+    <div className='p-6 flex flex-col gap-16 items-center justify-center w-full h-full '>
         <div>
             <h1 className='text-white'>From Interests to Friendships in 3 Steps</h1>
         </div>
