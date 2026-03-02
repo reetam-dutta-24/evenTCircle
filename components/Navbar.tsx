@@ -2,7 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 function Navbar() {
   return (
-    <div className='flex justify-between p-3 items-center '>
+    <div className=' flex justify-between p-3 items-center '>
       <div className='ml-5'>
         <h1 className='text-white'>Logo</h1>
       </div>
