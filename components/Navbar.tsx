@@ -12,6 +12,7 @@ function Navbar() {
             <Link href="/events"><li className='text-[var(--text-secondary)]'>Events</li></Link>
             <Link href="/howitworks"><li className='text-[var(--text-secondary)]'>How It Works</li></Link>
             <Link href="/about"><li className='text-[var(--text-secondary)]'>About</li></Link>
+            <Link href="/about"><li className='text-[var(--text-secondary)]'>Features</li></Link>
             <Link href="/reviews"><li className='text-[var(--text-secondary)]'>Reviews</li></Link>
         </ul>
       </div>
