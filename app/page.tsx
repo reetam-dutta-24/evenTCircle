@@ -5,26 +5,33 @@ import Events from '@/components/events'
 import Working from '@/components/working'
 import About from '@/components/about'
 import Features from '@/components/features'
+import Reviews from '@/components/reviews'
 const page = () => {
   return (
-    <div className='min-h-screen'>
-      <div className='h-[120vh]'>
-        <Navbar/>
+    <main className='min-h-screen'>
+      <header className='h-[11vh]'>
+        <Navbar />
+        
+      </header>
+      <section className='h-[109vh]' id = "home">
         <Home/>
-      </div>
-      <div className='h-[80vh]'>
+      </section>
+      <section className='h-[80vh]' id = "events">
         <Events/>
-      </div>
-      <div className='h-[80vh] mt-80  bg-[var(--purple-black)]'>
+      </section>
+      <section className='h-[80vh] mt-80  bg-[var(--purple-black)]' id = "howitworks" >
         <Working/>
-      </div>
-        <div className='h-[90vh] '>
+      </section>
+        <section className='h-[90vh] ' id = "about">
           <About/>
-        </div>
-        <div className='h-[80vh] bg-[var(--purple-dim)] '>
+        </section>
+        <section className='h-[100vh] bg-[var(--purple-dim)] ' id = "features">
           <Features/>
-        </div>
-    </div>
+        </section>
+        <section className='h-[80vh] bg-[var(--purple-back)]' id = "reviews">
+          <Reviews/>
+        </section>
+    </main>
   )
 }
 

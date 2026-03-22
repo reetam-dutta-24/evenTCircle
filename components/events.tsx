@@ -3,11 +3,11 @@ import { eventsList } from '@/lib/data'
 
 function events() {
   return (
-    <div className='flex flex-col p-4 items-center justify-center gap-16'>
+    <div className='flex flex-col p-4 items-center justify-center gap-16 '>
         <div>
             <h1 className='text-white'>Explore The Events Around You</h1>
         </div>
-        <div className='flex flex-wrap justify-center gap-14'>
+        <div className='w-full h-full flex flex-wrap  justify-center gap-14'>
             {eventsList.map((event)=>(
                 <div 
                   key={event.id} 

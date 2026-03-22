@@ -1,16 +1,26 @@
+"use client"
 import React from 'react'
-
+import { useState } from 'react'
 function home() {
-  
+  const videos = [
+    '/video1.mp4',
+    '/video3.mp4',
+    '/video4.mp4',
+    '/video5.mp4',
+    '/video6.mp4',
+    '/video7.mp4',
+  ]
+  const [currentVideo, setCurrentVideo] = useState(videos[0])
+  const videoSlider = ()=>{
+    const currentIndex = videos.indexOf(currentVideo)
+    const nextIndex = (currentIndex+1)%videos.length
+    setCurrentVideo(videos[nextIndex])
+  }
+
   return (
     <div className='relative h-full w-full  '>
-            <div className=' dark-theme blur-sm flex overflow-x-auto w-[100vw]  inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90'>
-      <video src = '/video1.mp4' autoPlay loop muted className='h-auto w-[100vw] object-cover '></video>
-      <video src = '/video7.mp4'  autoPlay loop muted className='h-auto w-[100vw] object-cover'></video>
-      <video src = '/video3.mp4'  autoPlay loop muted className='h-auto w-[100vw] object-cover'></video>
-      <video src = '/video6.mp4'  autoPlay loop muted className='h-auto w-[100vw] object-cover'></video>
-      <video src = '/video4.mp4'  autoPlay loop muted className='h-auto w-[100vw] object-cover'></video>
-      <video src = '/video5.mp4'  autoPlay loop muted className='h-auto w-[100vw] object-cover'></video>
+            <div className=' dark-theme blur-sm flex overflow-x-auto w-[100vw]  inset-0 bg-gradient-to-b from-black/80 via-black/70 to-black/90 ' >
+      <video src = {currentVideo} autoPlay onEnded={videoSlider} muted className='h-auto w-[100vw] object-cover transition-smooth' onClick={videoSlider}></video>
  
       
     </div>

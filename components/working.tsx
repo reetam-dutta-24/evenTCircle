@@ -1,30 +1,11 @@
+
 import React from 'react'
 import { Cog, Users, Zap } from 'lucide-react'; // or your preferred icon library
 
-const workingList = [
-    {
-        id: 1,
-        icon: Cog,
-        heading: "Set Your Interests",
-        description: "Tell us what you love — from weekend hikes to live music. We'll match you with events and people who share your vibe."    
-    },
-    {
-        id: 2,
-        heading: "Join Group Rooms",
-        icon: Users,
-        description: "Dive into group rooms based on your interests. Chat, plan meetups, and connect with like-minded locals before you even step out."
-    },
-    {
-        id: 3,
-        heading: "Attend Events Together",
-        icon: Zap,
-        description: "Find events that match your interests, RSVP with your new friends, and experience the city together. It's not just about going out — it's about belonging."
-    }
-
-]
+import { workingList } from '@/lib/data';
 function working() {
   return (
-    <div className='p-6 flex flex-col gap-16 items-center justify-center w-full h-full '>
+    <div className='p-6 flex flex-col gap-16 items-center justify-center w-full h-full  '>
         <div>
             <h1 className='text-white'>From Interests to Friendships in 3 Steps</h1>
         </div>
@@ -37,7 +18,7 @@ function working() {
                         <item.icon color="white" size={16}/>
                     </div>
             
-                    <p className='text-white text-center'>{item.description}</p>
+                    <p className='text-(--text-secondary) text-center'>{item.description}</p>
                 </div>
             ))}
         </div>

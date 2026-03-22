@@ -12,7 +12,8 @@ import {
     Lock,
     Users
 } from 'lucide-react'
-
+import { Cog,Zap } from 'lucide-react';
+import { title } from 'process';
 export const eventsList = [
     {
         id: 1,
@@ -113,4 +114,145 @@ export const eventsList = [
         eventNo: 61,
         icon: Users
     }
+]
+export const workingList = [
+    {
+        id: 1,
+        icon: Cog,
+        heading: "Set Your Interests",
+        description: "Tell us what you love — from weekend hikes to live music. We'll match you with events and people who share your vibe."    
+    },
+    {
+        id: 2,
+        heading: "Join Group Rooms",
+        icon: Users,
+        description: "Dive into group rooms based on your interests. Chat, plan meetups, and connect with like-minded locals before you even step out."
+    },
+    {
+    
+        id: 3,
+        heading: "Attend Events Together",
+        icon: Zap,
+        description: "Find events that match your interests, RSVP with your new friends, and experience the city together. It's not just about going out — it's about belonging."
+    }
+
+]
+
+export const featuresList = [
+    {
+        id: 1,
+        title: "AI-Matched Rooms",
+        icon: "🎯",
+        description:  "Don't show up alone. Our algorithm matches you with people who share your exact interests and personality. Join a Group Room, chat before the event, and walk in already knowing your people."
+    },
+    {
+        id: 2,
+        title: "Smart Reccomdations",
+        icon: "🧠",
+        description: "Our AI learns your preferences and social style to recommend events and people you'll genuinely connect with. The more you use it, the better it gets — it's like having a personal social planner in your pocket."
+    },
+    {
+        id: 3,
+        title: "Compatibility Scores",
+        icon: "❤️",
+        description: "See your compatibility percentage with other attendees before joining an event. It's a fun way to gauge potential connections and find your perfect social match."
+    },
+    {
+        id: 4,
+        title: "Points for Attending",
+        icon: "🎉",
+        description: "Earn points when you attend events with your matches. The more points you earn, the more perks and rewards you unlock — it's our way of celebrating your social adventures."
+            
+    },
+    {
+        id: 5,
+        title: "Private Event Hosting",
+        icon: "🔒",
+        description: "Want to organize your own event? Create a private event and share it with your matches or the wider community using private room codes. It's your space to connect and have fun on your terms."
+    },
+    {
+        id: 6,
+        title: "Built for Newcomers",
+        icon: "🌆",
+        description: "Whether you're new to the city or just looking to expand your social circle, our platform is designed to help you find your people and experience your city in a whole new way."
+    }
+]
+
+export const reviewsList = [
+    {
+        id: 1,
+        name: "Emily R.",
+        location: "Bowling Arena, Tokyo",
+        review: "EventCircle transformed my social life! I moved to a new city and was struggling to meet people. The AI-matched rooms helped me find friends who share my interests, and I've attend "
+
+    },
+    {
+        id: 2,
+        name: "Michael S.",
+        location: "Tech Conference, Tokyo",
+        review: "EventCircle made it so easy to connect with like-minded professionals at the tech conference. The AI-matched rooms helped me find interesting conversations and potential collaborators. "
+
+    },
+    {
+        id: 3,
+        name: "Sophia L.",
+        location: "Music Festival, Tokyo",
+        review: "I was nervous about going to the music festival alone, but EventCircle's compatibility scores helped me find people with similar music tastes. I ended up having an incredible time with "
+
+    },
+    {
+        id: 4,
+        name: "David K.",
+        location: "Outdoor Adventure, Tokyo",
+        review: "EventCircle's smart recommendations led me to an outdoor adventure event that I would have never found on my own. I met some amazing people who share my love for hiking and nature. "
+    },
+    {
+        id: 5,
+        name: "Olivia M.",
+        location: "Food & Drinks, Tokyo",
+        review: "I used to struggle with finding people to go out with, but EventCircle's private event hosting feature allowed me to organize a food and drinks night with my matches. It was so much" 
+    },
+    {
+        id: 6,
+        name: "James T.",
+        location: "Health & Wellness, Tokyo",
+        review: "EventCircle's focus on health and wellness events helped me find a community of like-minded individuals who prioritize self-care. I've attended yoga classes and wellness workshops" 
+    },
+    {
+        id: 7,
+        name: "Ava W.",
+        location: "Arts & Culture, Tokyo",
+        review: "EventCircle's arts and culture events introduced me to a vibrant community of creatives in the city. I've attended gallery openings and art workshops together with my matches, and"
+    },
+    {
+        id: 8,
+        name: "Ethan B.",
+        location: "Sports & Turfs, Tokyo",
+        review: "EventCircle's sports and turfs events helped me find a group of active individuals who love sports as much as I do. I've attended soccer games and outdoor fitness classes together"
+    },
+    {
+        id: 9,
+        name: "Mia C.", 
+        location: "Education & Workshops, Tokyo",
+        review: "EventCircle's education and workshops events have been a great way for me to learn new skills and meet people with similar interests. I've attended coding workshops and language" 
+    },
+    {
+        id: 10,
+        name: "Liam D.",
+        location: "Social & Fun, Tokyo",
+        review: "EventCircle's social and fun events have been a blast! I've attended game nights and social mixers together with my matches, and it's been an amazing way to unwind and connect" 
+    },
+    {
+        id: 11,
+        name: "Isabella P.",
+        location: "Nightlife & Clubbing, Tokyo",
+        review: "EventCircle's nightlife and clubbing events helped me find a group of fun-loving individuals who enjoy the city's vibrant nightlife. I've attended club nights and bar crawls"
+    },
+    {
+        id: 12,
+        name: "Noah G.",
+        location: "Arcade & Game Zones, Tokyo",
+        review: "EventCircle's arcade and game zones events have been a fantastic way for me to connect with fellow gamers in the city. I've attended gaming tournaments and arcade nights together"
+    }
+
 ]
