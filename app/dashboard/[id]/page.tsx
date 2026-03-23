@@ -3,9 +3,7 @@ import React from 'react'
 function page() {
   return (
     <div>
-      <div className='glass-lg'>
-        <h1>hello</h1>
-      </div>
+        <h1>hey</h1>
     </div>
   )
 }

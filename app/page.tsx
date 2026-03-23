@@ -1,11 +1,13 @@
 import React from 'react'
-import Navbar from '@/components/Navbar'
-import Home from '@/components/home'
-import Events from '@/components/events'
-import Working from '@/components/working'
-import About from '@/components/about'
-import Features from '@/components/features'
-import Reviews from '@/components/reviews'
+import Navbar from '@/components/landing/Navbar'
+import Home from '@/components/landing/home'
+import Events from '@/components/landing/events'
+import Working from '@/components/landing/working'
+import About from '@/components/landing/about'
+import Features from '@/components/landing/features'
+import Reviews from '@/components/landing/reviews'
+import Footer from '@/components/landing/footer'
+import Getstarted from '@/components/landing/getstarted'
 const page = () => {
   return (
     <main className='min-h-screen'>
@@ -31,6 +33,12 @@ const page = () => {
         <section className='h-[80vh] bg-[var(--purple-back)]' id = "reviews">
           <Reviews/>
         </section>
+        <section className='h-[50vh] bg-[var(--purple-accent)]'>
+          <Getstarted/>
+        </section>
+        <footer className='h-[50vh] bg-[var(--purple-back)]'>
+          <Footer/>
+        </footer>
     </main>
   )
 }

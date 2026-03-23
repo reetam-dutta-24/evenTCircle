@@ -94,18 +94,19 @@
   h6{
     font-size: 1rem;
   }
-  p,span,a,li {
+  p,span,a {
     font-family: var(--font-open-sans);
     font-weight: 400;
     font-size: 1rem;
       letter-spacing: -0.01em;
   }
-  button,input,select,textarea,accent {
+  button,input,select,textarea,accent,li {
     font-family: var(--font-poppins);
     font-weight: 500;
     font-size: 1rem;
       letter-spacing: -0.01em;  
   }
+  
 
   /* Scrollbar Styling */
   ::-webkit-scrollbar {
@@ -223,20 +224,81 @@
   }
 
   /* Glass Effect */
-  .glass {
-    background-color: rgba(10, 14, 39, 0.8);
-    @apply backdrop-blur-xl border border-[var(--border-primary)];
-    border-color: rgba(61, 61, 92, 0.2);
-  }
-  .glass-hover:hover{
-    transform: translateY(-10px);
-    box-shadow: 0 0 20px rgba(252, 53, 255, 0.7),
-            0 0 40px rgba(252, 53, 255, 0.5),
-            0 0 80px rgba(252, 53, 255, 0.3);
-    cursor: pointer;
-    transition: all 0.1s ease-in-out;
-  }
+  /* globals.css */
 
+.glass {
+  background: rgba(18, 10, 30, 0.55);
+  backdrop-filter: blur(24px);
+  -webkit-backdrop-filter: blur(24px);
+  border: 1px solid rgba(139, 61, 255, 0.18);
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Top highlight line */
+.glass::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(139, 61, 255, 0.5),
+    rgba(217, 70, 239, 0.4),
+    transparent
+  );
+}
+
+/* Inner corner glow */
+.glass::after {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(
+    circle,
+    rgba(139, 61, 255, 0.1) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+
+/* Hover variant — subtle border brightens */
+.glass-hover {
+  transition: border-color 0.3s ease;
+}
+
+.glass-hover:hover {
+  border-color: rgba(139, 61, 255, 0.35);
+}
+
+/* Variants */
+.glass-sm {
+  background: rgba(18, 10, 30, 0.45);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(139, 61, 255, 0.15);
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+}
+
+.glass-lg {
+  background: rgba(18, 10, 30, 0.65);
+  backdrop-filter: blur(32px);
+  -webkit-backdrop-filter: blur(32px);
+  border: 1px solid rgba(139, 61, 255, 0.22);
+  border-radius: 32px;
+  position: relative;
+  overflow: hidden;
+}
   /* Gradient Text */
   .gradient-text {
     background: linear-gradient(135deg, #8B5CF6 0%, #7C3AED 50%, #EC4899 100%);

@@ -256,3 +256,10 @@ export const reviewsList = [
     }
 
 ]
+
+export const featuresdata = ["10K+ Members",
+"500+ Events Monthly",
+"15K+ Friendships Formed",
+"4.9★ Rated",
+"50+ Cities"
+]
