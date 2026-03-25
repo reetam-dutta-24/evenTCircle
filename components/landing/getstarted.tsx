@@ -4,7 +4,6 @@ function getstarted() {
   return (
     <div>
         <h1>Get started</h1>
-    
     </div>
   )
 }

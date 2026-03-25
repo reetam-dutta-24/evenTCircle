@@ -1,8 +1,9 @@
 // src/app/layout.tsx
 
+import Sidebar from "@/components/dashboardUser/sidebar";
 import type { Metadata } from "next";
 import { Syne, Inter, JetBrains_Mono } from "next/font/google";
-
+import Navbar from '@/components/dashboardUser/navbar'
 const syne = Syne({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700", "800"],
@@ -36,8 +37,21 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    
-        {children}
+    <div className="w-screen h-screen flex">
+        <div className="w-[18%] h-full">
+            <Sidebar/>
+        </div>
+        <div className="w-[82%] h-full">
+            <div className="h-[10%] w-full">
+                <Navbar/>
+            </div>
+            <div className="h-[90%] w-full bg-(--purple-black) overflow-y-auto">
+                {children}
+            </div>
+
+        </div>
+    </div>
+        
      
  
   );

@@ -10,6 +10,12 @@
     --bg-tertiary: #2D1B4E;
     --bg-elevated: #3D2C5F;
     --bg-best: linear-gradient(90deg,rgba(101, 23, 153, 1) 0%, rgba(148, 21, 212, 1) 66%, rgba(238, 0, 255, 1) 100%);
+      --bg-lightgradient: linear-gradient(
+    to right,
+    #ee00ff,
+    #aa00ff,
+    #ee00ff
+  );
     
     /* Text Colors */
     --text-primary: #F5F5F5;
@@ -231,52 +237,69 @@
   backdrop-filter: blur(24px);
   -webkit-backdrop-filter: blur(24px);
   border: 1px solid rgba(139, 61, 255, 0.18);
-  border-radius: 24px;
   position: relative;
   overflow: hidden;
 }
 
-/* Top highlight line */
+/* Top + Bottom border highlight */
 .glass::before {
   content: '';
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: linear-gradient(
-    90deg,
-    transparent,
-    rgba(139, 61, 255, 0.5),
-    rgba(217, 70, 239, 0.4),
-    transparent
-  );
+  inset: 0;
+  pointer-events: none;
+
+  background:
+    /* TOP LINE */
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(139, 61, 255, 0.5),
+      rgba(217, 70, 239, 0.4),
+      transparent
+    ) top,
+
+    /* BOTTOM LINE */
+    linear-gradient(
+      90deg,
+      transparent,
+      rgba(139, 61, 255, 0.5),
+      rgba(217, 70, 239, 0.4),
+      transparent
+    ) bottom;
+
+  background-size: 100% 1px, 100% 1px;
+  background-repeat: no-repeat;
 }
 
-/* Inner corner glow */
+/* Top-right + Bottom-left glow */
 .glass::after {
   content: '';
   position: absolute;
-  top: -80px;
-  right: -80px;
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(139, 61, 255, 0.1) 0%,
-    transparent 70%
-  );
+  inset: 0;
   pointer-events: none;
+
+  background:
+    radial-gradient(
+      circle at top right,
+      rgba(139, 61, 255, 0.12),
+      transparent 70%
+    ),
+    radial-gradient(
+      circle at bottom left,
+      rgba(139, 61, 255, 0.12),
+      transparent 70%
+    );
 }
 
-/* Hover variant — subtle border brightens */
-.glass-hover {
-  transition: border-color 0.3s ease;
+/* Hover */
+.glass-hover{
+  transition: all 2s ease;
 }
-
 .glass-hover:hover {
-  border-color: rgba(139, 61, 255, 0.35);
+  border: 1px solid rgba(139, 61, 255, 0.3);
+  box-shadow:
+    0 0 0 1px rgba(139, 61, 255, 0.15),
+    0 8px 25px rgba(0, 0, 0, 0.5);
 }
 
 /* Variants */
