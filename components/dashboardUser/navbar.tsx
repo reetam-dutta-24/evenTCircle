@@ -5,7 +5,7 @@ function navbar() {
   return (
     <div className='flex text-white items-center justify-center gap-40 p-5  w-[80%] bg-(--bg-best) w-full h-full'>
       <div>
-        <h2>Home Section</h2>
+        <h3 className='font-bold'>Home Section</h3>
       </div>
       <div className='border border-fuchsia-600 rounded-2xl flex gap-3 p-3 items-center'>
         <Search/>

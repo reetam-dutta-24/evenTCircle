@@ -68,7 +68,7 @@ export const eventDetails = [
   {
     eventID: 434,
     eventTitle: "Board Game Night — Make New Friends!",
-    image: "/assets/images/arcade.png",
+    image: "/assets/images/nightlife.png",
     eventCategory: "Social",
     address: "Dice & Decks Café, Indiranagar, Bangalore-560038",
     city: "Bangalore",

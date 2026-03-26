@@ -63,7 +63,7 @@ const sidebardata = [
 ]
 function sidebar() {
   return (
-    <div className='flex flex-col p-15  text-(--text-secondary) gap-20 glass h-full w-full'>
+    <div className='flex flex-col p-12  text-(--text-secondary) gap-15 glass h-full w-full'>
       <div>
         <h1 className='text-white'>Logo</h1>
       </div>

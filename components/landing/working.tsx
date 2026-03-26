@@ -11,7 +11,7 @@ function working() {
         </div>
         <div className='flex flex-wrap gap-5'>
             {workingList.map((item)=>(
-                <div key={item.id} className='glass rounded-lg p-5 w-120 h-80 flex flex-col gap-8 justify-center items-center'>
+                <div key={item.id} className='glass rounded-lg p-5 w-100 h-80 flex flex-col gap-8 justify-center items-center'>
                     <div className='rounded-lg p-2 bg-[var(--purple-dim)] text-center flex gap-3'>
                         <h2 className='text-white text-xl font-bold'>{item.id}</h2>
                         <h2 className='text-white text-xl font-bold'>{item.heading}</h2>

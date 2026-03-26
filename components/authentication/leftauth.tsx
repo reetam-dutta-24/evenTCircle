@@ -26,7 +26,7 @@ const Leftauth = () => {
     }, [currentIndex])
 
     return (
-        <div className='flex flex-col justify-center text-center items-center gap-13 p-10'>           
+        <div className='flex flex-col justify-center text-center items-center gap-10 p-8'>           
                
             <div>
                 <h1 className='leading-tight bg-gradient-to-r from-[#ee00ff] via-[#aa00ff] to-[#ee00ff] bg-clip-text text-transparent '>Meet And Connect With People</h1>

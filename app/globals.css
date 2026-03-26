@@ -74,13 +74,13 @@
     font-family: var(--font-montserrat);
     font-weight: 700;
     letter-spacing: -0.01em;
-    font-size: 3rem;
+    font-size: 2.5rem;
   }
   h2 {
     font-family: var(--font-montserrat);
     font-weight: 600;
     letter-spacing: -0.01em;
-    font-size: 2rem;
+    font-size: 1.75rem;
     
   }
   h3,h4,h5,h6 {
@@ -103,13 +103,13 @@
   p,span,a {
     font-family: var(--font-open-sans);
     font-weight: 400;
-    font-size: 1rem;
+    font-size: 0.9rem;
       letter-spacing: -0.01em;
   }
   button,input,select,textarea,accent,li {
     font-family: var(--font-poppins);
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 0.9rem;
       letter-spacing: -0.01em;  
   }
   
@@ -291,11 +291,9 @@
     );
 }
 
-/* Hover */
-.glass-hover{
+
+.glass-hover {
   transition: all 2s ease;
-}
-.glass-hover:hover {
   border: 1px solid rgba(139, 61, 255, 0.3);
   box-shadow:
     0 0 0 1px rgba(139, 61, 255, 0.15),
@@ -321,6 +319,13 @@
   border-radius: 32px;
   position: relative;
   overflow: hidden;
+}
+.glass:hover {
+  transition: all 0.3s ease;
+  border: 1px solid rgba(139, 61, 255, 0.3);
+  box-shadow:
+    0 0 0 1px rgba(139, 61, 255, 0.15),
+    0 8px 25px rgba(0, 0, 0, 0.5);
 }
   /* Gradient Text */
   .gradient-text {
@@ -454,7 +459,7 @@
 }
 
 .heading-hero {
-  font-size: 5.5rem;
+  font-size: 5.2rem;
   font-family: var(--font-montserrat);
   font-weight: 700;
   letter-spacing: -0.02em;
